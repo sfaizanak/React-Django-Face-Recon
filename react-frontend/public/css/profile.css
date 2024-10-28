@@ -1,0 +1,203 @@
+.details-1 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.details-1 .recent-orders-1 {
+    position: relative;
+    height: 460px;
+    width: 24%;
+    padding: 30px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    background-color: rgba(255, 252, 252, 0.925);
+
+}
+
+
+
+@media (max-width : 768px) {
+    .details-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .details-1 .recent-orders-1 {
+        width: 100%;
+        overflow-x: visible;
+    }
+
+    .frame {
+        width: 100%;
+        /* Adjust width as needed */
+        height: 100%;
+        /* Allow height to adjust proportionally */
+    }
+
+    #videoElement {
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+    }
+
+    .btn-center {
+        position: absolute;
+        left: 35%;
+    }
+}
+
+.container-1 {
+    height: 100%;
+    width: 100%;
+    max-width: 650px;
+    font-size: 18px;
+    color: black;
+    font-style: normal;
+}
+
+
+.container-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.font-box {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.font-box::-webkit-scrollbar {
+    background-color: white;
+    width: 0px;
+}
+
+.top-box {
+    height: 39%;
+    width: 100%;
+    background-color: #8338ec;
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bottom-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 45%;
+    width: 100%;
+}
+
+.top-box img {
+    height: 100px;
+    width: 100px;
+    background-color: #e6ebe0;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 28%;
+    z-index: 1;
+}
+
+.bottom-box .designation {
+    font-size: 12px;
+    color: grey;
+    font-weight: normal;
+}
+
+.bottom-box p {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.padding {
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+.btn-center {
+    position: absolute;
+    left: 45%;
+}
+
+.btn-center-1 {
+    position: absolute;
+    left: 30%;
+    bottom: 2%;
+}
+
+.frame {
+    height: 100%;
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#videoElement {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+}
+
+/* You can add additional CSS to style the button further */
+
+@media screen and (max-width: 500px) {
+    .frame {
+        width: 100%;
+        /* Adjust width as needed */
+        height: 100%;
+        /* Allow height to adjust proportionally */
+    }
+
+    #videoElement {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+    }
+
+    .btn-center {
+        left: 30%;
+        /* Center horizontally */
+
+        /* Move back by half of its width */
+    }
+}
+
+.link-animate::after {
+    content: "";
+    display: flex;
+    border-top: 3px solid skyblue;
+    width: 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.link-animate:hover:after {
+    content: "";
+    border-top: 3px solid skyblue;
+    width: 100%;
+}
+
+.capture-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
