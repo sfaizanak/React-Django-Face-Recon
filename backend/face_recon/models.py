@@ -25,20 +25,20 @@ class OrganizationUser(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
 
-    groups = models.ManyToManyField(
-        'auth.Group',
-        related_name='organization_user_set',
-        blank=True,
-        help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
-        verbose_name='groups',
-    )
-    user_permissions = models.ManyToManyField(
-        'auth.Permission',
-        related_name='organization_user_set',
-        blank=True,
-        help_text='Specific permissions for this user.',
-        verbose_name='user permissions',
-    )
+    # groups = models.ManyToManyField(
+    #     'auth.Group',
+    #     related_name='organization_user_set',
+    #     blank=True,
+    #     help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
+    #     verbose_name='groups',
+    # )
+    # user_permissions = models.ManyToManyField(
+    #     'auth.Permission',
+    #     related_name='organization_user_set',
+    #     blank=True,
+    #     help_text='Specific permissions for this user.',
+    #     verbose_name='user permissions',
+    # )
 
     objects = OrganizationUserManager()
 
@@ -74,20 +74,20 @@ class EmployeeUser(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
 
-    groups = models.ManyToManyField(
-        'auth.Group',
-        related_name='employee_user_set',
-        blank=True,
-        help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
-        verbose_name='groups',
-    )
-    user_permissions = models.ManyToManyField(
-        'auth.Permission',
-        related_name='employee_user_set',
-        blank=True,
-        help_text='Specific permissions for this user.',
-        verbose_name='user permissions',
-    )
+    # groups = models.ManyToManyField(
+    #     'auth.Group',
+    #     related_name='employee_user_set',
+    #     blank=True,
+    #     help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
+    #     verbose_name='groups',
+    # )
+    # user_permissions = models.ManyToManyField(
+    #     'auth.Permission',
+    #     related_name='employee_user_set',
+    #     blank=True,
+    #     help_text='Specific permissions for this user.',
+    #     verbose_name='user permissions',
+    # )
 
     objects = EmployeeUserManager()
 
