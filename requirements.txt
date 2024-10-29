@@ -30,6 +30,7 @@ numpy==1.26.4
 opencv-python==4.9.0.80
 oscrypto==1.3.0
 pillow==10.3.0
+psycopg==3.2.3
 pycparser==2.22
 pyHanko==0.25.0
 pyhanko-certvalidator==0.26.3
