@@ -4,7 +4,7 @@ from .models import *
 class OrganizationUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrganizationUser
-        fields = ('username', 'email', 'password', 'organization')
+        fields = ('id','email', 'password', 'organization')
         extra_kwargs = {'password': {'write_only': True}}
 
     def create(self, validated_data):
@@ -14,7 +14,7 @@ class OrganizationUserSerializer(serializers.ModelSerializer):
 class EmployeeUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = EmployeeUser
-        fields = ('username', 'email', 'password', 'organization', 'department', 'designation', 'image')
+        fields = ('id','email', 'password', 'organization', 'department', 'designation', 'image')
         extra_kwargs = {'password': {'write_only': True}}
 
     def create(self, validated_data):
